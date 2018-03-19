@@ -1,0 +1,22 @@
+Open close a file with write auth
+file = open ("C:\\in\\testing.txt",'w')
+
+file.close()
+
+To write a line of text 
+
+file = open ("C:\\in\\testing.txt",'w')
+
+file.write("This line will be deleted in the next step")
+Out[10]: 42
+
+file.close()
+
+Appending a new line
+
+file = open ("C:\\in\\testing.txt",'a')
+
+file.write("\n well.. maybe not ..lets add a new line")
+Out[16]: 40
+
+file.close()
