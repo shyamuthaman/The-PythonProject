@@ -1,0 +1,9 @@
+filelist = [2015,2017,2019]
+
+for item in filelist:
+    print(item)
+
+Output 
+2015
+2017
+2019
