@@ -1,0 +1,9 @@
+if year == realYear:
+    print ("Equal")
+else:
+    print("Non-equal")
+print("I am out")
+
+Output: 
+Non-equal
+I am out
