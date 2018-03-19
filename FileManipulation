@@ -20,3 +20,9 @@ file.write("\n well.. maybe not ..lets add a new line")
 Out[16]: 40
 
 file.close()
+
+best practice for opening a file with autoclose
+with open("C:\\in\\testing.txt",'w') as file:
+    file.write("with method experiment")
+    
+    
