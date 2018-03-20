@@ -12,3 +12,6 @@ def milesToKM(distInMiles):
 m = input ("Please enter the miles:  ")
 m = float(m)
 milesToKM(m)
+
+"in command prompt"
+python C:\Users\shyam\OneDrive\Desktop\Python\MilesToKmFunction.py
