@@ -6,6 +6,9 @@ Created on Sun Mar 18 18:49:26 2018
 """
 
 def milesToKM(distInMiles):
-    distInKM = distInMiles/1.6
-    return(distInKM)
-    
+    distInKM = distInMiles * 1.6
+    print(distInKM, "km")
+
+m = input ("Please enter the miles:  ")
+m = float(m)
+milesToKM(m)
