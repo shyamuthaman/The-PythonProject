@@ -38,3 +38,43 @@ ids=["B3","\nB4","\nB5","\nB6"]
 for item in ids:
     with open("C:\\in\\exercise1.txt",'a') as file:
         file.write(item)
+
+read a file and do a mean
+import pandas
+df = pandas.read_csv("C:\\in\File1.txt")
+
+df
+Out[21]: 
+   Value
+0     10
+1     20
+2     40
+
+df.mean()
+Out[22]: 
+Value    23.333333
+dtype: float64
+
+
+Select dynamic list of filenames and calculate mean 
+
+import glob2
+
+filelist = glob2.glob("C:\\in\\analysis\\*.txt")
+
+filelist
+Out[25]: 
+['C:\\in\\analysis\\File1.txt',
+ 'C:\\in\\analysis\\File2.txt',
+ 'C:\\in\\analysis\\File3.txt']
+ 
+for file in filelist:
+    df = pandas.read_csv(file)
+    m = df.mean()
+    print(m)
+Value    23.333333
+dtype: float64
+Value    233.333333
+dtype: float64
+Value    2333.333333
+dtype: float64
