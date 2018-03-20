@@ -26,3 +26,15 @@ with open("C:\\in\\testing.txt",'w') as file:
     file.write("with method experiment")
     
     
+Question: Consider the following list:
+ids=["B3","\nB4","\nB5","\nB6"]
+Then, write a program that produces a text file which looks like this:
+B3
+B4
+B5
+B6
+
+ids=["B3","\nB4","\nB5","\nB6"]
+for item in ids:
+    with open("C:\\in\\exercise1.txt",'a') as file:
+        file.write(item)
